@@ -1,0 +1,4 @@
+baseURL: https://portfolio.anass.ch/
+languageCode: en-us
+title: Anass Portfolio
+theme: ["PaperMod"]
