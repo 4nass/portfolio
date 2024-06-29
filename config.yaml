@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://anass.ch/"
-title: Potfolio
+title: Home
 copyright: "© 2024 [Anass CHAHBOUNI](https://github.com/4nass/portfolio)"
 paginate: 5
 theme: [hugo-PaperMod]
@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["about-me", "posts"]
+mainsections: ["about-me", "projects", "posts"]
 
 minify:
   disableXML: true
@@ -45,7 +45,7 @@ languages:
   fr:
     languageName: "Français"
     weight: 2
-    title: PaperModL2
+    title: Accueil
     taxonomies:
       category: FRcategories
       tag: FRtags
@@ -58,9 +58,6 @@ languages:
         - name: 🗄️ Archive
           url: archives/
           weight: 5
-        - name: FRTags
-          url: frtags
-          weight: 10
         - name: FRCategories
           url: frcategories
           weight: 10
@@ -85,7 +82,7 @@ languages:
         # imageWidth: 120
         # imageHeight: 120
         subtitle: >
-          Consultant en cybersécurité et développeur passionné 💻:lock:
+          Consultant en cybersécurité et développeur passionné :computer: :lock:
         buttons:
           - name: À propos de moi
             url: about-me 
@@ -124,7 +121,7 @@ params:
     enabled: true
     title: Anass CHAHBOUNI
     subtitle: >
-      Cybersecurity consultant and devoted developer 💻:lock:
+      Cybersecurity consultant and devoted developer :computer: :lock:
     imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fd_200d_1f4bb.svg"
     imageTitle: my image
     # imageWidth: 120
