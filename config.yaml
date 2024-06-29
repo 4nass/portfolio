@@ -1,8 +1,8 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://anass.ch/"
-title: Portfolio
-copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
+title: Anass CHAHBOUNI
+copyright: "© [2024 Anass CHAHBOUNI](https://github.com/4nass/portfolio)"
 paginate: 5
 theme: [hugo-PaperMod]
 
@@ -29,6 +29,9 @@ languages:
       series: series
     menu:
       main:
+        - name: About me
+          url: about-me/
+          weight: 1
         - name: Archive
           url: archives
           weight: 5
@@ -38,8 +41,6 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
 
   fr:
     languageName: ":fr:"
@@ -78,33 +79,14 @@ languages:
         # imageHeight: 120
         subtitle: >
           In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀
-          As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. ☕️ 
+          As a tech aficionado 🤓, open-source advocate 🔄, perpetual student 🎓, and coffee connoisseur ☕️, I find joy in the intersection of my passions.  
           I firmly believe that the secret to a fulfilling life lies in pursuing what you love. 💡❤️
-          Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining!  🔧✨
+          Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining! 🔧✨
         buttons:
           - name: Blog
             url: posts
           - name: Profile Mode
             url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-
-  fa:
-    languagedirection: rtl
-    weight: 3
-    title: PaperMod RTL
-    taxonomies:
-      category: FAcategories
-      tag: FAtags
-      series: FAseries
-    menu:
-      main:
-        - name: FATags
-          url: fatags
-          weight: 10
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to RTL layout
 
 outputs:
   home:
@@ -114,8 +96,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Anass CHAHBOUNI - https://github.com/4nass/portfolio"
+  author: Anass CHAHBOUNI
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -135,8 +117,10 @@ params:
   images: ["images/papermod-cover.png"]
 
   profileMode:
-    enabled: false
-    title: PaperMod
+    enabled: true
+    title: Anass CHAHBOUNI
+    subtitle: >
+      Cybersecurity consultant and devoted developer 💻🔒
     imageUrl: "#"
     imageTitle: my image
     # imageWidth: 120
@@ -146,19 +130,6 @@ params:
         url: archives
       - name: Tags
         url: tags
-
-  homeInfoParams:
-    Title: "Anass CHAHBOUNI"
-    Content: >
-      👋 Greetings! I’m Anass. Welcome to my digital corner of the world. 🌐
-      
-      - In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀
-
-      - As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. ☕️ 
-      
-      - I firmly believe that the secret to a fulfilling life lies in pursuing what you love. 💡❤️
-
-      - Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining!  🔧✨
 
   socialIcons:
     - name: email
@@ -180,7 +151,7 @@ params:
       url: "https://ko-fi.com/4nass"
 
   editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    URL: "https://github.com/4nass/portfolio/tree/master/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
