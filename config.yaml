@@ -1,6 +1,6 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-baseURL: "https://portfolio.anass.ch/"
+baseURL: "https://anass.ch/"
 title: Portfolio
 copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 paginate: 5
@@ -71,12 +71,16 @@ languages:
       languageAltTitle: French
       profileMode:
         enabled: true
-        title: PaperMod
+        title: 👋 Greetings! I’m Anass. Welcome to my digital nook. 🌐 
         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
         imageTitle: ProfileMode image
         # imageWidth: 120
         # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+        subtitle: >
+          In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀
+          As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. ☕️ 
+          I firmly believe that the secret to a fulfilling life lies in pursuing what you love. 💡❤️
+          Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining!  🔧✨
         buttons:
           - name: Blog
             url: posts
@@ -146,13 +150,15 @@ params:
   homeInfoParams:
     Title: "Anass CHAHBOUNI"
     Content: >
-      👋 Welcome to my portfolio!
+      👋 Greetings! I’m Anass. Welcome to my digital corner of the world. 🌐
+      
+      - In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀
 
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+      - As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. ☕️ 
+      
+      - I firmly believe that the secret to a fulfilling life lies in pursuing what you love. 💡❤️
 
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+      - Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining!  🔧✨
 
   socialIcons:
     - name: email
