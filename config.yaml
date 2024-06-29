@@ -1,8 +1,8 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://anass.ch/"
-title: Anass CHAHBOUNI
-copyright: "© [2024 Anass CHAHBOUNI](https://github.com/4nass/portfolio)"
+title: Potfolio
+copyright: "© 2024 [Anass CHAHBOUNI](https://github.com/4nass/portfolio)"
 paginate: 5
 theme: [hugo-PaperMod]
 
@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["about-me", "posts"]
 
 minify:
   disableXML: true
@@ -29,21 +29,21 @@ languages:
       series: series
     menu:
       main:
-        - name: About me
-          url: about-me/
+        - name: 😎 About me 
+          url: about-me
           weight: 1
-        - name: Archive
+        - name: 🗄️ Archive
           url: archives
           weight: 5
-        - name: Search
+        - name: 🔎 Search 
           url: search/
           weight: 10
-        - name: Tags
+        - name: 🏷️ Tags
           url: tags/
           weight: 10
 
   fr:
-    languageName: ":fr:"
+    languageName: "Français"
     weight: 2
     title: PaperModL2
     taxonomies:
@@ -52,7 +52,10 @@ languages:
       series: FRseries
     menu:
       main:
-        - name: Archive
+        - name: 😎 À propos de moi
+          url: about-me
+          weight: 1
+        - name: 🗄️ Archive
           url: archives/
           weight: 5
         - name: FRTags
@@ -64,29 +67,30 @@ languages:
         - name: FRSeries
           url: frseries
           weight: 10
-        - name: NullLink
-          url: "#"
+        - name: 🔎 Recherche 
+          url: search/
+          weight: 10
+        - name: 🏷️ Tags
+          url: tags/
+          weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: French
       profileMode:
         enabled: true
-        title: 👋 Greetings! I’m Anass. Welcome to my digital nook. 🌐 
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
+        title: Anass CHAHBOUNI
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fd_200d_1f4bb.svg"
+        imageTitle: Profile image
         # imageWidth: 120
         # imageHeight: 120
         subtitle: >
-          In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀
-          As a tech aficionado 🤓, open-source advocate 🔄, perpetual student 🎓, and coffee connoisseur ☕️, I find joy in the intersection of my passions.  
-          I firmly believe that the secret to a fulfilling life lies in pursuing what you love. 💡❤️
-          Remember, life is a constant work in progress. We’re all on a journey of evolution and continuous improvement. So, let’s keep learning, growing, and shining! 🔧✨
+          Consultant en cybersécurité et développeur passionné 💻:lock:
         buttons:
+          - name: À propos de moi
+            url: about-me 
           - name: Blog
             url: posts
-          - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
 
 outputs:
   home:
@@ -97,7 +101,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Anass CHAHBOUNI - https://github.com/4nass/portfolio"
-  author: Anass CHAHBOUNI
+  author: Anass
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -120,8 +124,8 @@ params:
     enabled: true
     title: Anass CHAHBOUNI
     subtitle: >
-      Cybersecurity consultant and devoted developer 💻🔒
-    imageUrl: "#"
+      Cybersecurity consultant and devoted developer 💻:lock:
+    imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fd_200d_1f4bb.svg"
     imageTitle: my image
     # imageWidth: 120
     # imageHeight: 120

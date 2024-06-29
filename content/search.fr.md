@@ -1,4 +1,5 @@
 ---
-title: "SearchL2"
+title: "Recherche"
+placeholder: Recherche ...
 layout: "search"
 ---
