@@ -34,8 +34,8 @@ Ciao, mondo!
 
 In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀  
 <br />
-As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. :computer: 🤓 :arrows_counterclockwise: :books: :mortar_board: :coffee:  
+As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. :computer: :arrows_counterclockwise: :books: :mortar_board: :coffee:  
 <br />
 I firmly believe that the secret to a fulfilling life lies in pursuing what you love. :bulb: :heart:  
 <br />
-> :memo: Remember, life is an ever-evolving journey. We’re all constantly growing and improving. So, let’s keep learning, progressing, and shining brightly! 🔧:sparkles:  
+> :memo: Remember, life is an ever-evolving journey. We’re all constantly growing and improving. So, let’s keep learning, progressing, and shining brightly! :sparkles:  
