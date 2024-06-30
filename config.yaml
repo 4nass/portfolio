@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["about-me", "projects", "posts"]
+mainsections: ["about", "projects", "posts"]
 
 minify:
   disableXML: true
@@ -29,8 +29,8 @@ languages:
       series: series
     menu:
       main:
-        - name: 😎 About me 
-          url: about-me
+        - name: 😎 About 
+          url: about
           weight: 1
         - name: 🗄️ Archive
           url: archives
@@ -52,8 +52,8 @@ languages:
       series: FRseries
     menu:
       main:
-        - name: 😎 À propos de moi
-          url: about-me
+        - name: 😎 À propos 
+          url: about
           weight: 1
         - name: 🗄️ Archive
           url: archives/
@@ -85,7 +85,7 @@ languages:
           Consultant en cybersécurité et développeur passionné :computer: :lock:
         buttons:
           - name: À propos de moi
-            url: about-me 
+            url: about
           - name: Blog
             url: posts
 
