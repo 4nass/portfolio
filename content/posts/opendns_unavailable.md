@@ -1,7 +1,7 @@
 ---
-author: "Anass"
+author: ["Anass"]
 title: "The End of OpenDNS in France: A Comprehensive Overview"
-date: "2024-07-30"
+date: "2024-06-30"
 description: "Understanding the Legal and Technical Implications."
 tags: ["OpenDNS", "France", "DNS", "Internet Censorship", "Legal Issues"]
 categories: ["Security", "Technology"]
