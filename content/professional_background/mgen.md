@@ -1,7 +1,6 @@
 ---
 author: ["Anass"]
 title: "MGEN"
-date: "2024-06-30"
 description: "..."
 tags: [""]
 categories: ["Security", "Job"]

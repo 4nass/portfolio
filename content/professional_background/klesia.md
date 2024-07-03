@@ -1,7 +1,6 @@
 ---
 author: ["Anass"]
 title: "Klesia"
-date: "2024-06-30"
 description: "..."
 tags: [""]
 categories: ["Security", "Job"]
