@@ -20,7 +20,6 @@ In the mid-50s, information systems began their ascent with the advent of mainfr
 
 The 60s saw the widespread use of punch cards for data storage and processing. Systems like IBM's System/360, introduced in 1964, revolutionized business computing by standardizing hardware and software, making data processing more efficient and reliable.
 
-
 ### The 70s: The era of hard disks
 
 Storage technology advanced significantly with the introduction of hard disk drives. The IBM 3340, also known as the "Winchester" drive, was a milestone in 1973. This era also saw the rise of minicomputers, which made computing more accessible to smaller businesses and institutions.
