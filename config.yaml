@@ -82,7 +82,7 @@ languages:
         # imageWidth: 120
         # imageHeight: 120
         subtitle: >
-          Consultant en cybersécurité et développeur passionné :computer: :lock:
+          Consultant en cybersécurité et développeur passionné 💻 🔐
         buttons:
           - name: À propos de moi
             url: about
@@ -121,7 +121,7 @@ params:
     enabled: true
     title: Anass CHAHBOUNI
     subtitle: >
-      Cybersecurity consultant and devoted developer :computer: :lock:
+      Cybersecurity consultant and devoted developer 💻 🔐
     imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fd_200d_1f4bb.svg"
     imageTitle: my image
     # imageWidth: 120
