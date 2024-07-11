@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["about", "projects", "posts"]
+mainsections: ["about", "projects", "blog"]
 
 minify:
   disableXML: true
@@ -32,44 +32,25 @@ languages:
         - name: 😎 About 
           url: about
           weight: 1
-        - name: 🗄️ Archive
-          url: archives
+        - name: 💼 projects
+          url: projects
           weight: 5
-        - name: 🔎 Search 
-          url: search/
-          weight: 10
-        - name: 🏷️ Tags
-          url: tags/
+        - name: ✍🏼 Blog
+          url: https://blog.anass.ch/
           weight: 10
 
   fr:
     languageName: "Français"
     weight: 2
     title: Accueil
-    taxonomies:
-      category: FRcategories
-      tag: FRtags
-      series: FRseries
     menu:
       main:
         - name: 😎 À propos 
           url: about
           weight: 1
-        - name: 🗄️ Archive
-          url: archives/
+        - name: ✍🏼 Blog
+          url: https://blog.anass.ch/
           weight: 5
-        - name: FRCategories
-          url: frcategories
-          weight: 10
-        - name: FRSeries
-          url: frseries
-          weight: 10
-        - name: 🔎 Recherche 
-          url: search/
-          weight: 10
-        - name: 🏷️ Tags
-          url: tags/
-          weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
@@ -86,8 +67,10 @@ languages:
         buttons:
           - name: À propos de moi
             url: about
+          - name: Projets
+            url: projects
           - name: Blog
-            url: posts
+            url: https://blog.anass.ch/
 
 outputs:
   home:
@@ -127,10 +110,12 @@ params:
     # imageWidth: 120
     # imageHeight: 120
     buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+      - name: About me
+        url: about
+      - name: Projects
+        url: projects
+      - name: Blog
+        url: https://blog.anass.ch/
 
   socialIcons:
     - name: email
