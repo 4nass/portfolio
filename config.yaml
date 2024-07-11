@@ -48,9 +48,12 @@ languages:
         - name: 😎 À propos 
           url: about
           weight: 1
+        - name: 💼 projets
+          url: projects
+          weight: 5
         - name: ✍🏼 Blog
           url: https://blog.anass.ch/
-          weight: 5
+          weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
