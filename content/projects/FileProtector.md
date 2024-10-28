@@ -1,7 +1,7 @@
 ---
 author: ["Anass"]
 title: "FileProtector"
-description: "https://github.com/4nass/fileprotector"
+description: ""
 tags: ["Project"]
 categories: ["Security", "Cryptography"]
 ShowToc: false

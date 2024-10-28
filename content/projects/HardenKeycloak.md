@@ -1,7 +1,7 @@
 ---
 author: ["Anass"]
 title: "HardenKeycloak"
-description: "https://github.com/4nass/hardenkeycloak"
+description: ""
 tags: ["Project"]
 categories: ["Security", "IAM"]
 ShowToc: false
