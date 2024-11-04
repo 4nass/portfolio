@@ -1,5 +1,5 @@
 ---
 title: Snippets
 summary: Contains code snippets 
-description: Store and share bits of code and text
+description: Contains bits of code and text
 ---
