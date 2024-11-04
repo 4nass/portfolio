@@ -1,5 +1,4 @@
 ---
-author: ["Anass"]
 title: "IAMForge"
 description: ""
 tags: ["Project"]
@@ -7,7 +6,7 @@ categories: ["Security", "IAM"]
 ShowToc: false
 ---
 
-### Description
+### Description :
 
 IAMForge is a Python package for generating, managing, and testing identities across different Identity and Access Management (IAM) solutions. Initially tailored for Keycloak, it also supports other popular IAM systems like Okta and AWS Cognito. IAMForge helps developers and testers easily create and manage test identities, roles, and permissions in various IAM environments, making it ideal for identity testing, automation, and CI/CD pipelines.
 
