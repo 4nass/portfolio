@@ -1,0 +1,40 @@
+{{ $icon := .Get "icon" | default "wand-magic-sparkles" }}
+{{ $hideIcon := eq (.Get "hideIcon") "true" }}
+{{ $hideLinkIcon := eq (.Get "hideLinkIcon") "true" }}
+{{ $cardLink := eq (.Get "cardLink") "true" }}
+{{ $title := .Get "title" | default "Feature" }}
+{{ $url := .Get "url" }}
+{{ $label := .Get "label" | default "Learn more" }}
+{{ $headingLevel := .Get "headingLevel" | default "h2" }}
+{{ if not (in (slice "h1" "h2" "h3" "h4" "h5" "h6") $headingLevel) }}
+  {{ $headingLevel = "h2" }}
+{{ end }}
+
+{{ if and $url $cardLink }}
+  <a class="block h-full no-underline" href="{{ $url | safeURL }}" aria-label="{{ printf "%s: %s" $label $title }}">
+{{ end }}
+<article class="group h-full rounded-2xl border border-neutral-200/80 bg-white/60 p-6 shadow-sm backdrop-blur-xl transition duration-200 hover:-translate-y-1 hover:border-primary-300 hover:shadow-xl hover:shadow-primary-500/10 dark:border-neutral-800 dark:bg-neutral-900/50 dark:hover:border-primary-700">
+  {{ if not $hideIcon }}
+    <span class="mb-5 inline-flex rounded-xl bg-primary-100 p-3 text-primary-600 dark:bg-primary-950 dark:text-primary-400">
+      {{ partial "icon.html" $icon }}
+    </span>
+  {{ end }}
+  {{ printf `<%s class="text-lg font-bold text-neutral-900 dark:text-white">` $headingLevel | safeHTML }}{{ $title | markdownify }}{{ printf `</%s>` $headingLevel | safeHTML }}
+  <div class="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">{{ .Inner | markdownify }}</div>
+  {{ with $url }}
+    {{ if $cardLink }}
+      <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary-600 dark:text-primary-400">
+        {{ $label | markdownify }}
+        {{ if not $hideLinkIcon }}{{ partial "icon.html" "link" }}{{ end }}
+      </span>
+    {{ else }}
+      <a class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary-600 hover:text-primary-500 dark:text-primary-400" href="{{ . | safeURL }}">
+        {{ $label | markdownify }}
+        {{ if not $hideLinkIcon }}{{ partial "icon.html" "link" }}{{ end }}
+      </a>
+    {{ end }}
+  {{ end }}
+</article>
+{{ if and $url $cardLink }}
+  </a>
+{{ end }}

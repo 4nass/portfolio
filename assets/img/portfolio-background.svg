@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" role="img" aria-label="Layered security glass background">
+  <defs>
+    <linearGradient id="base" x1="120" y1="40" x2="1480" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2632"/>
+      <stop offset=".48" stop-color="#06151E"/>
+      <stop offset="1" stop-color="#081D28"/>
+    </linearGradient>
+    <linearGradient id="blueGlass" x1="-120" y1="60" x2="650" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#245F91" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#18778A" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#29B5AB" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="tealGlass" x1="1570" y1="920" x2="930" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2BB7A9" stop-opacity=".9"/>
+      <stop offset=".55" stop-color="#18778A" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#175271" stop-opacity=".1"/>
+    </linearGradient>
+    <linearGradient id="indigoGlass" x1="1580" y1="-40" x2="920" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5367A8" stop-opacity=".74"/>
+      <stop offset=".52" stop-color="#245F91" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#18778A" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="deepGlass" x1="-100" y1="930" x2="630" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#154C62" stop-opacity=".78"/>
+      <stop offset=".58" stop-color="#0E3B50" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#0E3B50" stop-opacity=".05"/>
+    </linearGradient>
+    <radialGradient id="edgeMask" cx="0" cy="0" r="1" gradientTransform="translate(800 455) rotate(90) scale(590 870)" gradientUnits="userSpaceOnUse">
+      <stop offset=".2" stop-color="black"/>
+      <stop offset=".42" stop-color="#565656"/>
+      <stop offset=".66" stop-color="#E4E4E4"/>
+      <stop offset=".78" stop-color="white"/>
+    </radialGradient>
+    <radialGradient id="readingWell" cx="0" cy="0" r="1" gradientTransform="translate(800 420) rotate(90) scale(520 700)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#031018" stop-opacity=".72"/>
+      <stop offset=".58" stop-color="#04141D" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#04141D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ambientBlur" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="58"/>
+    </filter>
+    <filter id="fineGrain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".58" numOctaves="4" seed="27"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <mask id="peripheralGlass">
+      <rect width="1600" height="1000" fill="url(#edgeMask)"/>
+    </mask>
+  </defs>
+
+  <style>
+    @keyframes glass-left {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+      50% { transform: translate3d(48px, -30px, 0) rotate(1.5deg); }
+    }
+
+    @keyframes glass-right {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+      50% { transform: translate3d(-42px, 34px, 0) rotate(-1.35deg); }
+    }
+
+    @keyframes glass-light {
+      0%, 100% { opacity: .46; }
+      50% { opacity: 1; }
+    }
+
+    .glass-left {
+      animation: glass-left 24s ease-in-out infinite;
+      transform-origin: 260px 500px;
+    }
+
+    .glass-right {
+      animation: glass-right 29s ease-in-out infinite;
+      transform-origin: 1340px 500px;
+    }
+
+    .glass-light { animation: glass-light 13s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .glass-left,
+      .glass-right,
+      .glass-light { animation: none; }
+    }
+  </style>
+
+  <rect width="1600" height="1000" fill="url(#base)"/>
+
+  <g mask="url(#peripheralGlass)">
+    <g filter="url(#ambientBlur)" opacity=".8">
+      <path d="M-260-80H410L730 300L382 680L-300 540Z" fill="#176E8C"/>
+      <path d="M1880 1080H1210L910 700L1250 330L1900 470Z" fill="#169C92"/>
+      <path d="M1810-210H1250L1000 140L1312 472L1870 312Z" fill="#40568E" opacity=".76"/>
+      <path d="M-220 1110H380L654 782L352 482L-280 628Z" fill="#0E6170" opacity=".7"/>
+    </g>
+
+    <g class="glass-left">
+      <path d="M-240-110H402L706 248L382 594L-286 482Z" fill="url(#blueGlass)"/>
+      <path d="M-140 74L315-58L574 244L310 517L-184 407Z" fill="#48C5C0" fill-opacity=".12"/>
+      <path d="M-290 1080L-216 610L250 446L616 737L364 1102Z" fill="url(#deepGlass)"/>
+      <path d="M-156 1008L-90 702L238 584L468 761L296 1016Z" fill="#64D5C8" fill-opacity=".1"/>
+    </g>
+
+    <g class="glass-right">
+      <path d="M1848-100H1246L974 230L1282 558L1886 426Z" fill="url(#indigoGlass)"/>
+      <path d="M1748 38L1345-54L1116 228L1360 485L1802 376Z" fill="#69A9D5" fill-opacity=".1"/>
+      <path d="M1888 1090L1260 1062L926 724L1254 374L1882 514Z" fill="url(#tealGlass)"/>
+      <path d="M1772 1010L1354 984L1104 725L1355 500L1810 604Z" fill="#84E8DA" fill-opacity=".1"/>
+    </g>
+
+    <g class="glass-light" opacity=".8">
+      <path d="M-80 0H338L476 154L-18 278Z" fill="#9BE8E2" fill-opacity=".12"/>
+      <path d="M1680 1000H1280L1150 850L1634 730Z" fill="#A5F3E7" fill-opacity=".13"/>
+    </g>
+  </g>
+
+  <rect width="1600" height="1000" fill="url(#readingWell)"/>
+  <rect width="1600" height="1000" filter="url(#fineGrain)" opacity=".065"/>
+</svg>

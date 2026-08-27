@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article class="about-page mx-auto max-w-4xl px-4 pb-20 pt-12 text-center sm:px-6 sm:pt-20">
+    <header class="about-page__header">
+      <h1 class="about-page__title text-balance text-5xl font-black leading-[1.05] tracking-tighter text-neutral-900 dark:text-white sm:text-7xl">
+        {{ .Title | emojify }}
+      </h1>
+      {{ with .Summary }}
+        <p class="about-page__summary mx-auto mt-6 max-w-2xl text-balance text-xl leading-8 text-neutral-600 dark:text-neutral-300 sm:text-2xl sm:leading-9">
+          {{ . | markdownify }}
+        </p>
+      {{ end }}
+    </header>
+
+    <section class="about-page__content prose prose-lg mx-auto mt-14 max-w-2xl text-center dark:prose-invert">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}

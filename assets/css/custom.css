@@ -1,0 +1,269 @@
+/* Site-level refinements on top of Blowfish. */
+
+:root {
+  --font-sans: "Bricolage Grotesque", sans-serif;
+  --tw-prose-links: #0f766e;
+}
+
+header .main-menu > a.site-brand {
+  font-family: "Caveat", cursive;
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+  overflow: visible;
+  padding-block: 0.08em;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+#main-content .landing-rise.landing-rise-1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-variation-settings: "opsz" 48, "wdth" 92;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+
+.about-page__title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-variation-settings: "opsz" 48, "wdth" 92;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+}
+
+.about-page__content h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-variation-settings: "opsz" 28, "wdth" 94;
+  letter-spacing: -0.035em;
+  margin-top: 3.5rem;
+}
+
+.about-page__content p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose a {
+  text-underline-offset: 0.2em;
+}
+
+@keyframes background-refraction-light {
+  0%, 100% {
+    filter: saturate(0.88) contrast(1.02) brightness(1);
+    transform: scale(1.025) rotate(-0.2deg);
+  }
+
+  50% {
+    filter: saturate(1.08) contrast(1.06) brightness(1.05);
+    transform: scale(1.07) rotate(0.45deg);
+  }
+}
+
+@keyframes background-refraction-dark {
+  0%, 100% {
+    filter: saturate(1.04) contrast(1.06) brightness(0.97);
+    transform: scale(1.025) rotate(-0.2deg);
+  }
+
+  50% {
+    filter: saturate(1.2) contrast(1.1) brightness(1.08);
+    transform: scale(1.07) rotate(0.45deg);
+  }
+}
+
+#background-canvas img {
+  animation: background-refraction-light 19s ease-in-out infinite;
+  opacity: 0.9;
+  transform-origin: center;
+  will-change: filter, transform;
+}
+
+#background-canvas > div {
+  background: radial-gradient(ellipse at 50% 37%, rgb(248 250 252 / 96%) 0%, rgb(248 250 252 / 90%) 41%, rgb(241 245 249 / 48%) 67%, rgb(226 232 240 / 14%) 100%);
+}
+
+.dark #background-canvas img {
+  animation-name: background-refraction-dark;
+  opacity: 1;
+}
+
+.dark #background-canvas > div {
+  background: radial-gradient(ellipse at 50% 37%, rgb(6 21 30 / 93%) 0%, rgb(6 21 30 / 78%) 41%, rgb(5 18 27 / 28%) 67%, rgb(5 18 27 / 0%) 100%);
+}
+
+.article-card {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+}
+
+.homepage-project-grid .not-prose > article,
+.homepage-project-grid .not-prose > a > article {
+  display: flex;
+  flex-direction: column;
+  min-height: 18rem;
+}
+
+.homepage-project-grid .not-prose > a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.homepage-project-grid .not-prose > article > a,
+.homepage-project-grid .not-prose > a > article > span {
+  align-self: center;
+  margin-top: auto;
+}
+
+.projects-showcase {
+  margin: 4rem auto 3rem;
+  max-width: 72rem;
+}
+
+.projects-showcase__hero {
+  max-width: 48rem;
+}
+
+.projects-showcase__eyebrow {
+  color: var(--color-primary-500);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.projects-showcase h1 {
+  color: var(--tw-prose-headings);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.projects-showcase__lead {
+  color: var(--tw-prose-body);
+  font-size: clamp(1.125rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.projects-showcase__context {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary-500) 25%, transparent);
+  color: var(--tw-prose-body);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 0.55rem;
+  letter-spacing: 0.08em;
+  margin: 3.5rem 0 1.5rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.projects-showcase__context h2 {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  text-transform: inherit;
+}
+
+.projects-showcase__github {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.projects-showcase__github .github-card-wrapper,
+.projects-showcase__github .github-card-wrapper > a,
+.projects-showcase__github .github-card-wrapper > a > div {
+  height: 100%;
+}
+
+.projects-showcase__github .github-card-wrapper > a > div {
+  background: rgb(255 255 255 / 88%);
+  border: 1px solid rgb(15 23 42 / 12%);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 36px rgb(15 23 42 / 7%) !important;
+  min-height: 19rem;
+  padding: 1.5rem;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.dark .projects-showcase__github .github-card-wrapper > a > div {
+  background: rgb(15 23 42 / 84%);
+  border-color: rgb(96 165 250 / 28%);
+  box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
+}
+
+.projects-showcase__github .github-card-wrapper > a > div:hover {
+  border-color: color-mix(in srgb, var(--color-primary-500) 70%, transparent);
+  transform: translateY(-3px);
+}
+
+.projects-showcase__github .github-card-wrapper > a > div > div:last-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.projects-showcase__github .language-dot[data-language="default"],
+.projects-showcase__github .language-dot[data-language="default"] + div {
+  display: none;
+}
+
+.projects-redirect {
+  margin: 8rem auto;
+  max-width: 42rem;
+  text-align: center;
+}
+
+.projects-redirect p {
+  color: var(--tw-prose-body);
+}
+
+.projects-redirect a {
+  color: var(--color-primary-500);
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .projects-showcase {
+    margin-top: 2.5rem;
+  }
+
+  .projects-showcase__context {
+    margin-top: 2.5rem;
+  }
+
+  .projects-showcase__github {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-showcase__github .github-card-wrapper > a > div {
+    min-height: 16rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #background-canvas img {
+    animation: none;
+    filter: saturate(0.88) contrast(1.02);
+    transform: none;
+  }
+
+  .dark #background-canvas img {
+    filter: saturate(1.04) contrast(1.06);
+  }
+
+  .article-card {
+    transition: none;
+  }
+
+}

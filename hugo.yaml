@@ -1,0 +1,164 @@
+baseURL: "https://anass.ch/"
+theme: "blowfish"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+summaryLength: 0
+
+pagination:
+  pagerSize: 6
+
+taxonomies:
+  tag: ""
+  category: ""
+  series: ""
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+  seo:
+    metaDescriptionOrder:
+      - description
+      - summary
+      - site
+  colorScheme: ocean
+  defaultAppearance: light
+  autoSwitchAppearance: false
+  enableA11y: false
+  enableSearch: false
+  enableCodeCopy: false
+  enableStructuredBreadcrumbs: true
+  fingerprintAlgorithm: sha512
+  hotlinkFeatureImage: false
+  defaultBackgroundImage: "img/portfolio-background.svg"
+  defaultSocialImage: "img/og-default.jpg"
+  backgroundCanvas: true
+
+  header:
+    layout: floating
+    mobileMenuStyle: dropdown
+
+  footer:
+    showMenu: true
+    showCopyright: true
+    showThemeAttribution: false
+    showAppearanceSwitcher: true
+    showScrollToTop: true
+
+  homepage:
+    layout: landing
+    showRecent: false
+    showMoreLink: false
+
+  article:
+    showDate: false
+    showAuthor: false
+    showBreadcrumbs: true
+    showReadingTime: false
+    showWordCount: false
+    showTableOfContents: false
+    showTaxonomies: true
+    showCategories: true
+    showTags: true
+    showPagination: true
+
+  list:
+    showBreadcrumbs: true
+    showSummary: true
+    showCards: true
+    cardView: true
+    cardViewScreenWidth: true
+    groupByYear: false
+
+languages:
+  en:
+    locale: en
+    label: English
+    weight: 1
+    title: "Anass Chahbouni"
+    params:
+      seoTitle: "Senior IAM consultant & Keycloak architect | Anass Chahbouni"
+      brandName: "Anass Chahbouni"
+      displayName: EN
+      isoCode: en
+      description: "Senior IAM consultant and Keycloak architect specialising in secure, scalable identity platforms."
+      copyright: "© 2024 – { year } Anass CHAHBOUNI"
+      author:
+        name: "Anass CHAHBOUNI"
+        headline: "Cybersecurity consultant · IAM & Keycloak practitioner"
+        bio: "I build practical, secure identity experiences and share what I learn along the way."
+        image: "img/profile.svg"
+        imageQuality: 96
+        links:
+          - email: "mailto:contact@anass.ch"
+          - linkedin: "https://www.linkedin.com/in/4nass/"
+          - github: "https://github.com/4nass"
+          - keybase: "https://keybase.io/4nass"
+          - "ko-fi": "https://ko-fi.com/4nass"
+    menus:
+      main:
+        - name: Projects
+          pageRef: projects
+          weight: 10
+        - name: Blog
+          url: "https://blog.anass.ch/"
+          weight: 20
+        - name: About
+          pageRef: about
+          weight: 30
+
+  fr:
+    locale: fr
+    label: Français
+    weight: 2
+    title: "Anass Chahbouni"
+    params:
+      seoTitle: "Consultant IAM & architecte Keycloak | Anass Chahbouni"
+      brandName: "Anass Chahbouni"
+      displayName: FR
+      isoCode: fr
+      description: "Consultant IAM senior et architecte Keycloak, spécialisé dans la conception, la sécurisation et l’industrialisation de plateformes d’identité à grande échelle."
+      copyright: "© 2024 – { year } Anass CHAHBOUNI"
+      author:
+        name: "Anass CHAHBOUNI"
+        headline: "Consultant IAM senior · Architecte Keycloak"
+        bio: "Je conçois et sécurise des plateformes d’identité, puis je partage ici mes projets et mes retours d’expérience."
+        image: "img/profile.svg"
+        imageQuality: 96
+        links:
+          - email: "mailto:contact@anass.ch"
+          - linkedin: "https://www.linkedin.com/in/4nass/"
+          - github: "https://github.com/4nass"
+          - keybase: "https://keybase.io/4nass"
+          - "ko-fi": "https://ko-fi.com/4nass"
+    menus:
+      main:
+        - name: Projets
+          pageRef: projects
+          weight: 10
+        - name: Blog
+          url: "https://blog.anass.ch/"
+          weight: 20
+        - name: À propos
+          pageRef: about
+          weight: 30
