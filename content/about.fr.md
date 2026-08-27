@@ -1,48 +1,35 @@
 ---
-title: "About me"
-description: ""
-layout: "aboutme"
-summary: "aboutme"
-tags: ["about-me", "me"]
-categories: ["me"]
-series: ["Anass"]
-editPost:
-    URL: "mailto:contact@anass.ch"
-    Text: "Me contacter" 
-    appendFilePath: false
+title: "À propos"
+layout: "about"
+description: "Ce qui guide mon travail autour de l’identité, de Keycloak et des systèmes que je construis."
+summary: "Ce qui guide mon travail autour de l’identité, de Keycloak et des systèmes que je construis."
+showDate: false
+showReadingTime: false
 ShowToc: false
-ShowReadingTime: false
-ShareButtons: [""]
 ---
-<center>
-<font color="grey">
-👋 Hello, World!
-你好，世界!  
-¡Hola, mundo!  
-नमस्ते, दुनिया!  
-Bonjour, le monde!  
-!مرحباً أيها العالم  
-Olá, mundo!  
-Привет, мир!  
-Halo, Dunia!  
-Hallo, Welt!  
-Ciao, mondo!  
-</font>
-</center>
 
-### I’m Anass.
-#### Welcome to my digital nook. 🌐 
+## L’architecte IAM
 
-Dans cet espace, je présente mes expériences en tant que consultant en cybersécurité et développeur dévoué. Je suis heureux de partager mes projets les plus récents, mes idées et les connaissances que j'ai pu acquérir tout au long de mon parcours. 🚀  
+L’identité se remarque rarement quand tout fonctionne. Pourtant, elle décide qui accède à quoi, organise la confiance entre les applications et conditionne l’expérience de chaque utilisateur. C’est à cette frontière entre sécurité, architecture et simplicité d’usage que je travaille.
 
-En tant que passionné de technologie, partisan des logiciels libres, étudiant éternel et grand amateur de café, je trouve ma joie à la jonction de mes passions. :computer: :arrows_counterclockwise: :books: :mortar_board: :coffee:  
+Une plateforme IAM bien conçue ne se contente pas de protéger les accès : elle doit aussi rester compréhensible, évolutive et exploitable dans la durée. C’est ce que je cherche à construire avec Keycloak, le SSO et les protocoles d’identité.
 
-Depuis toujours, je suis fasciné par la technologie. Qu'il s'agisse de démonter des gadgets pour en comprendre tous les rouages ou de me tenir au courant des dernières tendances technologiques, ma curiosité n'a pas de limites. Je me penche ici sur les avancées technologiques de pointe, en explorant tout ce qui touche à l'IA et à la machine learning, ainsi que les dernières nouveautés en matière de création de hardware et de software.  
+## Le consultant
 
-À l'ère du numérique, la sécurité est primordiale. Je crois qu'il faut encourager une culture de la sensibilisation et de l'éducation à la cybersécurité. Mes articles couvriront un large éventail de sujets liés à la sécurité, notamment les meilleures pratiques en matière de protection des données personnelles, des informations sur les nouvelles menaces et des analyses approfondies des failles de sécurité. Ensemble, nous naviguerons dans le paysage complexe de la sécurité numérique pour protéger nos vies virtuelles.  
+J’interviens lorsque les sujets deviennent difficiles à démêler : une plateforme qui évolue mal, une intégration qui atteint ses limites, des parcours d’authentification devenus trop complexes ou des équipes qui souhaitent reprendre la maîtrise de leur IAM.
 
-L'apprentissage ne s'arrête jamais, surtout dans le monde de la technologie. En tant qu'étudiant permanent, je suis toujours à la recherche de nouvelles connaissances et compétences. Je vous accompagnerai dans l'exploration de nouveaux langages de programmation, dans la découverte d'algorithmes complexes et dans l'expérimentation de différents outils technologiques. Apprenons ensemble et apprécions la nature en constante évolution de la technologie.  
+Mon rôle est d’abord de rendre le problème lisible, puis d’aider à faire les bons choix. Une solution n’est réellement utile que si les équipes la comprennent, peuvent la maintenir et savent pourquoi elle a été conçue ainsi.
 
-Je suis convaincue que le secret d'une vie épanouie réside dans la poursuite de ce que l'on aime. :bulb: :heart:  
+## L’ingénieur
 
-> :memo: N'oubliez pas que la vie est un long voyage en constante évolution. Nous sommes tous en train de grandir et de nous améliorer. Alors, continuons à apprendre, à progresser et à briller de mille feux ! :sparkles:  
+Je reste proche du code et de la production. Une architecture n’a de valeur que si elle peut être déployée, observée, mise à jour et dépannée. Keycloak, les protocoles d’identité, le cloud, Kubernetes et l’automatisation permettent de passer du schéma à une plateforme réellement exploitable.
+
+Je privilégie les solutions explicites, documentées et testables — celles qui résistent aux changements, aux incidents et au temps.
+
+## Le contributeur open source
+
+Les projets présentés sur ce site prolongent des questions rencontrées sur le terrain. Ils me permettent d’explorer une idée jusqu’au code, de rendre certains problèmes plus faciles à reproduire et de partager des outils utiles à d’autres équipes.
+
+Je contribue également à Keycloak et je publie mes retours techniques sur [mon blog](https://blog.anass.ch/).
+
+Pour parler d’identité, de Keycloak ou d’un problème de sécurité concret, vous pouvez [me contacter](mailto:contact@anass.ch).

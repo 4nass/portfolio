@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <section class="projects-showcase">
+    <header class="projects-showcase__hero">
+      {{ if .Params.heroCaption }}
+        <p class="projects-showcase__eyebrow">{{ .Params.heroCaption }}</p>
+      {{ end }}
+      <h1>{{ .Title | emojify }}</h1>
+      {{ if .Params.heroLead }}
+        <p class="projects-showcase__lead">{{ .Params.heroLead }}</p>
+      {{ end }}
+    </header>
+
+    <div class="projects-showcase__context">
+      {{ if eq .Language.Lang "fr" }}
+        <h2>Identité et sécurité</h2>
+        <span aria-hidden="true">·</span>
+        <h2>Ingénierie logicielle</h2>
+        <span aria-hidden="true">·</span>
+        <h2>IA appliquée</h2>
+      {{ else }}
+        <h2>Cybersecurity</h2>
+        <span aria-hidden="true">·</span>
+        <h2>Software engineering</h2>
+        <span aria-hidden="true">·</span>
+        <h2>Experiments</h2>
+      {{ end }}
+    </div>
+
+    {{ with .Content }}
+      <section class="projects-showcase__github" aria-label="{{ $.Title }}">
+        {{ . }}
+      </section>
+    {{ end }}
+  </section>
+{{ end }}

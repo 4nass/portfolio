@@ -1,57 +1,63 @@
-# hugo-paperMod Example
+# anass.ch
 
-This repository offers an example site for [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+Source for my bilingual portfolio. It is built with [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/). My blog is deployed separately at [blog.anass.ch](https://blog.anass.ch/).
 
-## Install
+## Requirements
 
-Read Wiki => [hugo-PaperMod - Installation](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
+- Hugo Extended `0.162.0` or later
 
-## Directory Tree
+## Run locally
 
+Clone the repository with its theme:
+
+```bash
+git clone --recurse-submodules https://github.com/4nass/portfolio.git
+cd portfolio
+hugo server
 ```
-.(site root)
-├── configTaxo.yml
-├── config.yml
-├── content
-│   ├── archives.fr.md
-│   ├── archives.md
-│   ├── posts
-│   │   ├── emoji-support.md
-│   │   ├── markdown-syntax.fa.md
-│   │   ├── markdown-syntax.fr.md
-│   │   ├── markdown-syntax.md
-│   │   ├── math-typesetting.md
-│   │   ├── papermod
-│   │   │   ├── _index.md
-│   │   │   ├── papermod-faq.md
-│   │   │   ├── papermod-features
-│   │   │   │   ├── images
-│   │   │   │   │   ├── homeinfo.jpg
-│   │   │   │   │   ├── profile.jpg
-│   │   │   │   │   └── regular.jpg
-│   │   │   │   └── index.md
-│   │   │   ├── papermod-icons.md
-│   │   │   ├── papermod-installation.md
-│   │   │   └── papermod-variables.md
-│   │   ├── placeholder-text.md
-│   │   └── rich-content.md
-│   ├── search.fr.md
-│   ├── search.md
-│   └── tags
-├── LICENSE
-├── README.md
-├── resources
-│   └── _gen
-│       ├── assets
-│       └── images
-├── static
-│   ├── android-chrome-192x192.png
-│   ├── android-chrome-512x512.png
-│   ├── apple-touch-icon.png
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   ├── favicon.ico
-│   └── papermod-cover.png
-└── themes
-    └── hugo-PaperMod
+
+If the repository is already cloned:
+
+```bash
+git submodule update --init --recursive
+hugo server
 ```
+
+## Project structure
+
+- `content/`: bilingual pages, introduction and projects;
+- `assets/css/custom.css`: typography, animated background, cards and visual refinements;
+- `assets/img/`: profile image, Open Graph card and portfolio assets;
+- `layouts/`: local Hugo overrides for the homepage, About, Projects, header, SEO, sitemap and robots;
+- `static/`: favicon and other static assets;
+- `themes/blowfish/`: the Blowfish theme, tracked as a Git submodule.
+
+## Theme customisation
+
+I use Hugo’s override mechanism for site-specific changes: files in `layouts/`, `assets/` and `static/` take precedence over the corresponding theme files.
+
+These overrides cover:
+
+- visual identity: Bricolage Grotesque, a Caveat signature, a light default theme, animated background and favicon;
+- the homepage, About and Projects pages;
+- GitHub cards and repository links;
+- SEO: titles, descriptions, Open Graph, JSON-LD, `hreflang`, sitemap and `robots.txt`.
+
+After a major Blowfish update, I check the overrides in `layouts/` and generate a production build before deploying.
+
+## Update Blowfish
+
+```bash
+git submodule update --remote --merge themes/blowfish
+hugo --environment production --minify
+```
+
+Then review the local rendering, especially the header, About and Projects pages, and the SEO metadata.
+
+## Production build
+
+```bash
+hugo --environment production --minify
+```
+
+Hugo generates `robots.txt`, which references the root sitemap: `https://anass.ch/sitemap.xml`.

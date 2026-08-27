@@ -1,46 +1,35 @@
 ---
 title: "About me"
-description: ""
-layout: "aboutme"
-summary: "about me"
-series: ["Anass"]
-editPost:
-    URL: "mailto:contact@anass.ch"
-    Text: "Contact me" 
-    appendFilePath: false
+layout: "about"
+description: "A few words about my work, how I think about identity and what I share here."
+summary: "A few words about my work, how I think about identity and what I share here."
+showDate: false
+showReadingTime: false
 ShowToc: false
-ShowReadingTime: false
-ShareButtons: [""]
 ---
-<center>
-<font color="grey">
-👋 Hello, World!
-你好，世界!  
-¡Hola, mundo!  
-नमस्ते, दुनिया!  
-Bonjour, le monde!  
-!مرحباً أيها العالم  
-Olá, mundo!  
-Привет, мир!  
-Halo, Dunia!  
-Hallo, Welt!  
-Ciao, mondo!  
-</font>
-</center>
 
-### I’m Anass.
-#### Welcome to my digital nook. 🌐 
+## The IAM architect
 
-In this space, I chronicle my adventures as a cybersecurity consultant and devoted developer. I’m thrilled to share my most recent projects, insights, and the knowledge I’ve gained on my journey. 🚀  
+Identity is rarely the most visible part of a system. Yet it determines who can access what, how applications trust one another and what happens when a user journey breaks. That intersection of security, user experience and architecture is what interests me.
 
-As a tech aficionado, open-source advocate, perpetual student, and coffee connoisseur, I find joy in the intersection of my passions. :computer: :arrows_counterclockwise: :books: :mortar_board: :coffee:  
+I work with IAM, SSO and Keycloak because solid identity foundations make products safer, but also easier to evolve and operate.
 
-Ever since I can remember, I've been fascinated by technology. From dismantling gadgets to understand their inner workings to staying updated with the latest tech trends, my curiosity knows no bounds. Here, I delve into the cutting-edge advancements in technology, exploring everything from AI and machine learning to the latest in hardware and software development.  
+## The consultant
 
-In today's digital age, security is paramount. I believe in fostering a culture of awareness and education around cybersecurity. My posts will cover a broad spectrum of security topics, including best practices for personal data protection, insights into emerging threats, and in-depth analyses of security breaches. Together, we'll navigate the intricate landscape of digital security to safeguard our virtual lives.  
+I enjoy concrete problems: a platform that is hard to evolve, an integration that will not scale, authentication journeys that have become too complex, or teams that need to regain control of their IAM.
 
-Learning never stops, especially in the tech world. As a perpetual student, I'm always on the lookout for new knowledge and skills. I'll bring you along as I explore new programming languages, dive into complex algorithms, and experiment with different tech tools. Let's learn together and embrace the ever-evolving nature of technology.  
+My role is to bring clarity back to these systems, then help teams build a solution they understand, can maintain and can trust.
 
-I firmly believe that the secret to a fulfilling life lies in pursuing what you love. :bulb: :heart:  
+## The engineer
 
-> :memo: Remember, life is an ever-evolving journey. We’re all constantly growing and improving. So, let’s keep learning, progressing, and shining brightly! :sparkles:  
+I stay close to the code and to operations. Keycloak, identity protocols, cloud, Kubernetes and automation are the tools I use to turn an architecture into a platform people can actually run.
+
+I favour solutions that are explicit, documented and testable: solutions that hold up through change, incidents and time.
+
+## The open-source contributor
+
+The projects on this site are extensions of questions I encounter in the field. They let me explore ideas, make certain problems easier to test and share work that may be useful to other teams.
+
+I also contribute to the Keycloak project and publish technical notes on [my blog](https://blog.anass.ch/).
+
+To discuss identity, Keycloak or a concrete security challenge, [get in touch](mailto:contact@anass.ch).
