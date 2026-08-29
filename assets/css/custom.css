@@ -1,5 +1,30 @@
 /* Site-level refinements on top of Blowfish. */
 
+/* Self-hosted fonts keep the first render independent from Google Fonts. */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/BricolageGrotesque-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/Caveat-Variable.woff2") format("woff2");
+}
+
 :root {
   --font-sans: "Bricolage Grotesque", sans-serif;
   --tw-prose-links: #0f766e;
@@ -19,21 +44,18 @@ header .main-menu > a.site-brand {
 
 #main-content .landing-rise.landing-rise-1 {
   font-family: "Bricolage Grotesque", sans-serif;
-  font-variation-settings: "opsz" 48, "wdth" 92;
   font-weight: 700;
   letter-spacing: -0.055em;
 }
 
 .about-page__title {
   font-family: "Bricolage Grotesque", sans-serif;
-  font-variation-settings: "opsz" 48, "wdth" 92;
   font-weight: 700;
   letter-spacing: -0.055em;
 }
 
 .about-page__content h2 {
   font-family: "Bricolage Grotesque", sans-serif;
-  font-variation-settings: "opsz" 28, "wdth" 94;
   letter-spacing: -0.035em;
   margin-top: 3.5rem;
 }
