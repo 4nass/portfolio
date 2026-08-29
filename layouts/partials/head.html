@@ -150,12 +150,31 @@
     href="{{ $bundleCSS.RelPermalink }}"
     integrity="{{ $bundleCSS.Data.Integrity }}">
 
-  {{/* JS loaded immediately */}}
-  {{ $jsAppearance := resources.Get "js/appearance.js" | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint $alg }}
-  <script
-    type="text/javascript"
-    src="{{ $jsAppearance.RelPermalink }}"
-    integrity="{{ $jsAppearance.Data.Integrity }}"></script>
+  {{/* Apply the saved appearance before the deferred JavaScript bundle runs. */}}
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const sitePreference = root.getAttribute("data-default-appearance");
+      const autoAppearance = root.getAttribute("data-auto-appearance") === "true";
+      let userPreference = null;
+
+      try {
+        userPreference = localStorage.getItem("appearance");
+      } catch (error) {
+        // Storage can be unavailable in privacy-restricted browser contexts.
+      }
+
+      const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+      const shouldUseDark =
+        (sitePreference === "dark" && userPreference === null) ||
+        userPreference === "dark" ||
+        (autoAppearance && prefersDark && userPreference !== "light");
+
+      if (shouldUseDark) {
+        root.classList.add("dark");
+      }
+    })();
+  </script>
   {{ partial "language-redirect.html" . }}
   {{ $enableA11y := .Site.Params.enableA11y | default false }}
   {{ if $enableA11y }}
@@ -191,6 +210,8 @@
 
   {{/* JS deferred */}}
   {{ $jsResources := slice }}
+  {{ $jsAppearance := resources.Get "js/appearance.js" | resources.ExecuteAsTemplate "js/appearance.js" . | resources.Minify | resources.Fingerprint $alg }}
+  {{ $jsResources = $jsResources | append $jsAppearance }}
   {{ if site.Params.footer.showScrollToTop | default true }}
     {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
   {{ end }}
