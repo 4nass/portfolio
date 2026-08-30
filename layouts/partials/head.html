@@ -131,6 +131,10 @@
 
   {{ $alg := .Site.Params.fingerprintAlgorithm | default "sha512" }}
 
+  {{/* Preload only above-the-fold local fonts before the stylesheet starts. */}}
+  <link rel="preload" href="{{ "fonts/BricolageGrotesque-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/Caveat-Variable.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+
   {{/* CSS */}}
   {{ $cssResources := slice }}
   {{ $schemeName := .Site.Params.colorScheme | default "blowfish" }}
