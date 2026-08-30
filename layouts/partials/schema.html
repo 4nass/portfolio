@@ -7,7 +7,7 @@
     "name": "{{ .Site.Title | safeJS }}",
     "alternateName": "4nass",
     {{ with .Site.Params.description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
+    {{ with .Site.Language.Lang }}"inLanguage": "{{ . }}",{{ end }}
     "url": {{ site.Home.Permalink | safeURL }},
     {{ with .Site.Params.keywords }}"keywords": {{ . }},{{ end }}
     "publisher" : {
@@ -54,7 +54,7 @@
     "@type": "ProfilePage",
     "name": "{{ .Title | safeJS }}",
     {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
+    {{ with .Site.Language.Lang }}"inLanguage": "{{ . }}",{{ end }}
     "url": {{ .Permalink }},
     "mainEntity": {
       "@type": "Person",
@@ -70,7 +70,7 @@
     "@type": "CollectionPage",
     "name": "{{ .Title | safeJS }}",
     {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
+    {{ with .Site.Language.Lang }}"inLanguage": "{{ . }}",{{ end }}
     "url": {{ .Permalink }},
     "mainEntityOfPage": {{ .Permalink }}
   }
@@ -82,7 +82,7 @@
     "name": "{{ .Title | safeJS }}",
     "headline": "{{ .Title | safeJS }}",
     {{ with .Description }}"description": "{{ . | safeJS }}",{{ end }}
-    {{ with .Site.Language.Locale }}"inLanguage": "{{ . }}",{{ end }}
+    {{ with .Site.Language.Lang }}"inLanguage": "{{ . }}",{{ end }}
     "url" : {{ .Permalink }},
     "author" : {
       "@type": "Person",

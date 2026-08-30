@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  {{ with .Site.Language.Params.htmlCode | default .Site.Language.Locale }}
+  {{ with .Site.Language.Params.htmlCode | default .Site.Language.Lang }}
     <meta http-equiv="content-language" content="{{ . }}">
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +46,7 @@
   {{ if .IsTranslated }}
     {{ $xDefault := "" }}
     {{ range .AllTranslations }}
-      {{ $hreflang := .Language.Locale | default .Language.Lang }}
+      {{ $hreflang := .Language.Lang }}
       {{ if $hreflang }}
         <link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}">
       {{ end }}
